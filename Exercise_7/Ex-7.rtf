@@ -1,0 +1,171 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Bold;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red159\green160\blue28;\red180\green36\blue25;
+\red47\green180\blue29;\red46\green174\blue187;}
+{\*\expandedcolortbl;;\csgray\c0;\cssrgb\c68468\c68012\c14208;\cssrgb\c76409\c21698\c12524;
+\cssrgb\c20238\c73898\c14947;\cssrgb\c20196\c73240\c78250;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \CocoaLigature0 \
+pratibha@Kunals-MacBook-Pro assignment-1 % mkdir Exercise-7\
+pratibha@Kunals-MacBook-Pro assignment-1 % cd Exercise-7\
+pratibha@Kunals-MacBook-Pro Exercise-7 % ls -a\
+.	..\
+pratibha@Kunals-MacBook-Pro Exercise-7 % git init \
+\cf3 hint: Using 'master' as the name for the initial branch. This default branch name\cf2 \
+\cf3 hint: is subject to change. To configure the initial branch name to use in all\cf2 \
+\cf3 hint: of your new repositories, which will suppress this warning, call:\cf2 \
+\cf3 hint: \cf2 \
+\cf3 hint: 	git config --global init.defaultBranch <name>\cf2 \
+\cf3 hint: \cf2 \
+\cf3 hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and\cf2 \
+\cf3 hint: 'development'. The just-created branch can be renamed via this command:\cf2 \
+\cf3 hint: \cf2 \
+\cf3 hint: 	git branch -m <name>\cf2 \
+Initialized empty Git repository in /Users/pratibha/Desktop/Assignment-1/Exercise-7/.git/\
+pratibha@Kunals-MacBook-Pro Exercise-7 % ls -a\
+.	..	.git\
+pratibha@Kunals-MacBook-Pro Exercise-7 % cat > a.txt \
+a for apple\
+pratibha@Kunals-MacBook-Pro Exercise-7 % git status\
+On branch master\
+\
+No commits yet\
+\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+	\cf4 a.txt\cf2 \
+\
+nothing added to commit but untracked files present (use "git add" to track)\
+pratibha@Kunals-MacBook-Pro Exercise-7 % git add .\
+pratibha@Kunals-MacBook-Pro Exercise-7 % git status\
+On branch master\
+\
+No commits yet\
+\
+Changes to be committed:\
+  (use "git rm --cached <file>..." to unstage)\
+	\cf5 new file:   a.txt\cf2 \
+\
+pratibha@Kunals-MacBook-Pro Exercise-7 % git commit -m "file a is added"\
+[master (root-commit) 00a85fb] file a is added\
+ Committer: Pratibha <pratibha@Kunals-MacBook-Pro.local>\
+Your name and email address were configured automatically based\
+on your username and hostname. Please check that they are accurate.\
+You can suppress this message by setting them explicitly. Run the\
+following command and follow the instructions in your editor to edit\
+your configuration file:\
+\
+    git config --global --edit\
+\
+After doing this, you may fix the identity used for this commit with:\
+\
+    git commit --amend --reset-author\
+\
+ 1 file changed, 1 insertion(+)\
+ create mode 100644 a.txt\
+pratibha@Kunals-MacBook-Pro Exercise-7 % git status\
+'On branch master\
+nothing to commit, working tree clean\
+pratibha@Kunals-MacBook-Pro Exercise-7 % git log --oneline\
+\cf3 00a85fb (
+\f1\b \cf6 HEAD -> \cf5 master
+\f0\b0 \cf3 )\cf2  file a is added\
+pratibha@Kunals-MacBook-Pro Exercise-7 % cat > b.txt\
+b for banana\
+pratibha@Kunals-MacBook-Pro Exercise-7 % git status\
+On branch master\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+	\cf4 b.txt\cf2 \
+\
+nothing added to commit but untracked files present (use "git add" to track)\
+pratibha@Kunals-MacBook-Pro Exercise-7 % git add .\
+pratibha@Kunals-MacBook-Pro Exercise-7 % git status\
+On branch master\
+Changes to be committed:\
+  (use "git restore --staged <file>..." to unstage)\
+	\cf5 new file:   b.txt\cf2 \
+\
+pratibha@Kunals-MacBook-Pro Exercise-7 % git commit -m "file b is added"\
+[master f11f0ad] file b is added\
+ Committer: Pratibha <pratibha@Kunals-MacBook-Pro.local>\
+Your name and email address were configured automatically based\
+on your username and hostname. Please check that they are accurate.\
+You can suppress this message by setting them explicitly. Run the\
+following command and follow the instructions in your editor to edit\
+your configuration file:\
+\
+    git config --global --edit\
+\
+After doing this, you may fix the identity used for this commit with:\
+\
+    git commit --amend --reset-author\
+\
+ 1 file changed, 1 insertion(+)\
+ create mode 100644 b.txt\
+pratibha@Kunals-MacBook-Pro Exercise-7 % git status\
+On branch master\
+nothing to commit, working tree clean\
+pratibha@Kunals-MacBook-Pro Exercise-7 % git log --oneline\
+\cf3 f11f0ad (
+\f1\b \cf6 HEAD -> \cf5 master
+\f0\b0 \cf3 )\cf2  file b is added\
+\cf3 00a85fb\cf2  file a is added\
+pratibha@Kunals-MacBook-Pro Exercise-7 % cat > c.txt\
+c for cantalope\
+pratibha@Kunals-MacBook-Pro Exercise-7 % git status\
+On branch master\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+	\cf4 c.txt\cf2 \
+\
+nothing added to commit but untracked files present (use "git add" to track)\
+pratibha@Kunals-MacBook-Pro Exercise-7 % git add .\
+pratibha@Kunals-MacBook-Pro Exercise-7 % git status\
+On branch master\
+Changes to be committed:\
+  (use "git restore --staged <file>..." to unstage)\
+	\cf5 new file:   c.txt\cf2 \
+\
+pratibha@Kunals-MacBook-Pro Exercise-7 % git commit -m "file c is added"\
+[master 1582230] file c is added\
+ Committer: Pratibha <pratibha@Kunals-MacBook-Pro.local>\
+Your name and email address were configured automatically based\
+on your username and hostname. Please check that they are accurate.\
+You can suppress this message by setting them explicitly. Run the\
+following command and follow the instructions in your editor to edit\
+your configuration file:\
+\
+    git config --global --edit\
+\
+After doing this, you may fix the identity used for this commit with:\
+\
+    git commit --amend --reset-author\
+\
+ 1 file changed, 1 insertion(+)\
+ create mode 100644 c.txt\
+pratibha@Kunals-MacBook-Pro Exercise-7 % git status\
+On branch master\
+nothing to commit, working tree clean\
+pratibha@Kunals-MacBook-Pro Exercise-7 % git log --oneline\
+\cf3 1582230 (
+\f1\b \cf6 HEAD -> \cf5 master
+\f0\b0 \cf3 )\cf2  file c is added\
+\cf3 f11f0ad\cf2  file b is added\
+\cf3 00a85fb\cf2  file a is added\
+pratibha@Kunals-MacBook-Pro Exercise-7 % git reset --hard f11f0ad\
+HEAD is now at f11f0ad file b is added\
+pratibha@Kunals-MacBook-Pro Exercise-7 % git status\
+On branch master\
+nothing to commit, working tree clean\
+pratibha@Kunals-MacBook-Pro Exercise-7 % git log --oneline\
+\cf3 f11f0ad (
+\f1\b \cf6 HEAD -> \cf5 master
+\f0\b0 \cf3 )\cf2  file b is added\
+\cf3 00a85fb\cf2  file a is added\
+pratibha@Kunals-MacBook-Pro Exercise-7 % cat c.txt\
+cat: c.txt: No such file or directory\
+pratibha@Kunals-MacBook-Pro Exercise-7 % \
+}
